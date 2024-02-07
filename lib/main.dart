@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       //Para a transição entre as telas,
       routes: {
-        AppRoutes.HOME: (ctx) => const CategoriesScreen(),
-        AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.home: (ctx) => const CategoriesScreen(),
+        AppRoutes.categoriesMeals: (ctx) => CategoriesMealsScreen(),
       },
     );
   }
