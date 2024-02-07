@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meals/screens/categories_meals_screens.dart';
 import 'screens/categories_screen.dart';
+import 'screens/meal_detail_screen.dart';
 import 'utils/app_routes.dart';
 
 void main() {
@@ -15,12 +16,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
+        hintColor: Colors.amber,
+        fontFamily: 'Raleway',
+        canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+              titleSmall: const TextStyle(
+                fontSize: 20,
+                fontFamily: 'RobotoCondensed',
+              ),
+            ),
       ),
       //Para a transição entre as telas,
       routes: {
         AppRoutes.home: (ctx) => const CategoriesScreen(),
-        AppRoutes.categoriesMeals: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
+        AppRoutes.mealDetail: (ctx) => const MealDeatilScreen(),
       },
     );
   }
