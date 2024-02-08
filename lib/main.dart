@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'screens/tabs_screen.dart';
 import 'package:meals/screens/categories_meals_screens.dart';
-import 'screens/categories_screen.dart';
 import 'screens/meal_detail_screen.dart';
 import 'utils/app_routes.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       //Para a transição entre as telas,
       routes: {
-        AppRoutes.home: (ctx) => const CategoriesScreen(),
+        AppRoutes.home: (ctx) => const TabsScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
         AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
       },
