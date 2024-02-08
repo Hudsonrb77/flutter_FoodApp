@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Vamos Cozinhar?',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.pink,
         hintColor: Colors.amber,
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.home: (ctx) => const CategoriesScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
-        AppRoutes.mealDetail: (ctx) => const MealDeatilScreen(),
+        AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
       },
     );
   }

@@ -10,7 +10,8 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Vamos Cozinhar?'),
-        backgroundColor: Colors.blue,
+        centerTitle: true,
+        backgroundColor: Colors.pink,
       ),
       body: GridView(
         //Uma area que tem rolagem. Delegando a forma de rendereizar a sua grid para o MaxCrossAligmentExtent.
