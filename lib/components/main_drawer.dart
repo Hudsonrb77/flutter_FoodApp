@@ -1,18 +1,16 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
 
-  Widget _createItem(IconData icon, String Label) {
+  Widget _createItem(IconData icon, String label) {
     return ListTile(
       leading: Icon(
         icon,
         size: 26,
       ),
       title: Text(label,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: 'RobotoCondensed',
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -30,19 +28,19 @@ class MainDrawer extends StatelessWidget {
             height: 120,
             //ocupa a largura maxima que posso usar.
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             color: Theme.of(context).hintColor,
             alignment: Alignment.bottomRight,
-            child: Text(
+            child: const Text(
               'Vamos Cozinhar?',
               style: TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 30,
-                color: Theme.of(context).primaryColor,
+                color: Colors.pink,
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           _createItem(Icons.restaurant, 'Refeições'),
           _createItem(Icons.settings, 'Configurações'),
         ],
