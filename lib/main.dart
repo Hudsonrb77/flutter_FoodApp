@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/tabs_screen.dart';
 import 'package:meals/screens/categories_meals_screens.dart';
 import 'screens/meal_detail_screen.dart';
+import 'screens/settings.dart';
 import 'utils/app_routes.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Vamos Cozinhar?',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primaryColor: Colors.pink,
         hintColor: Colors.amber,
         fontFamily: 'Raleway',
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.home: (ctx) => const TabsScreen(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsScreen(),
         AppRoutes.mealDetail: (ctx) => const MealDetailScreen(),
+        AppRoutes.settings: (ctx) => const SettingsScreen(),
       },
     );
   }
