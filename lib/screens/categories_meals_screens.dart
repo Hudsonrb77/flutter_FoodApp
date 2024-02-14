@@ -6,7 +6,7 @@ import '../models/meal.dart';
 class CategoriesMealsScreen extends StatelessWidget {
   final List<Meal> meals;
 
-  const CategoriesMealsScreen(this.meals);
+  const CategoriesMealsScreen(this.meals, {super.key});
 
   @override
   Widget build(BuildContext context) {
